@@ -1,51 +1,60 @@
-📦 Gestion Commerciale - Laravel 11
-Une application web de gestion commerciale moderne pour la gestion des articles, clients et commandes. Ce projet a été conçu pour démontrer l'utilisation des relations Eloquent et une interface utilisateur propre.
+# 📦 Gestion Commerciale - Laravel 11
 
-🚀 Fonctionnalités
-Gestion des Articles : CRUD complet (Ajout, Modification, Suppression, Affichage).
+Une application web de gestion commerciale moderne et performante, conçue pour centraliser la gestion des articles, des clients et des commandes. Ce projet met en avant l'utilisation avancée du moteur **Eloquent ORM** et une architecture logicielle propre (Clean Code).
 
-Interface Moderne : Design responsive avec Bootstrap 5 et icônes FontAwesome.
+---
 
-Validation Avancée : Sécurisation des données via les Form Requests (Prix > 0, Stock >= 0).
+## 🚀 Fonctionnalités implémentées
 
-Pagination : Navigation fluide dans les listes de données.
+### 🔹 Gestion des Articles (Module Complet)
+C'est le cœur actuel du projet. Il permet une gestion fluide du catalogue produit :
+- **CRUD Complet** : Création, lecture, mise à jour et suppression d'articles.
+- **Logique Métier** : 
+    - Validation stricte des prix (doivent être supérieurs à 0).
+    - Contrôle du stock (entier positif).
+- **Interface Utilisateur (UX/UI)** :
+    - Affichage sous forme de tableaux modernes.
+    - Badges dynamiques pour l'état du stock.
+    - Boutons d'action avec effets de survol (Hover).
 
-Base de données : Système de Seeding et Factories pour générer des données de test réalistes.
+### 🔹 Architecture & Sécurité
+- **Route Model Binding** : Optimisation des requêtes SQL via l'injection directe des modèles dans les contrôleurs.
+- **Validation Robuste** : Utilisation de `Request $request->validate()` pour garantir l'intégrité des données.
+- **Pagination Native** : Gestion efficace de l'affichage pour les grandes bases de données.
 
-🛠️ Stack Technique
-Framework : Laravel 11
+---
 
-Langage : PHP 8.2+
+## 🛠️ Stack Technique
+- **Backend** : Laravel 11 & PHP 8.4
+- **Frontend** : Blade Templating, Bootstrap 5, FontAwesome 6
+- **Base de données** : MySQL
 
-Frontend : Bootstrap 5 / Blade Templating
+---
 
-Base de données : MySQL
+## 📸 Aperçu du Projet (Screenshots)
 
-💻 Installation
-Cloner le projet :
+> **Astuce** : Pour ajouter vos propres captures d'écran, créez un dossier `screenshots` à la racine, déposez vos images dedans, et remplacez les liens ci-dessous.
 
-Bash
-git clone https://github.com/ton-username/nom-du-repo.git
-cd nom-du-repo
-Installer les dépendances :
+| Liste des Articles | Détails de l'Article |
+| :--- | :--- |
+| ![Index Page](https://via.placeholder.com/400x250?text=Index+Page) | ![Show Page](https://via.placeholder.com/400x250?text=Show+Page) |
 
-Bash
-composer install
-Configurer l'environnement :
+---
 
-Bash
-cp .env.example .env
+## 💻 Installation & Configuration
 
-# Configurez vos accès DB dans le fichier .env
+1. **Cloner le projet** :
+   ```bash
+   git clone [https://github.com/votre-username/gestion_commandes.git](https://github.com/votre-username/gestion_commandes.git)
+   cd gestion_commandes
 
-php artisan key:generate
-Migrations et Seeders :
 
-Bash
-php artisan migrate:fresh --seed
-Lancer le serveur :
+## 📸 Aperçu de l'application
 
-Bash
-php artisan serve
+| Liste des Articles | Détails de la Commande |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/c9a9bf1b-7891-4207-9742-ce68a7c0898a" width="100%"> | <img src="https://github.com/user-attachments/assets/93830810-f22c-4bf0-bcab-74e3e039a260" width="100%"> |
 
-ggggggggggggggggggggggggggvvvvvdddddddddddddddddddd
+| Détails de l'Article |
+| :---: |
+| <img src="https://github.com/user-attachments/assets/c949b714-9668-4cad-af60-76ea388eaf13" width="60%"> |
